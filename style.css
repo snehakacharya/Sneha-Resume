@@ -227,3 +227,21 @@ footer {
 ::-webkit-scrollbar-track {
   background: var(--bg);
 }
+
+.download-btn {
+  background: linear-gradient(90deg, #3a0ca3 60%, #f72585 100%);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.13rem;
+  cursor: pointer;
+  box-shadow: 0 3px 12px #0005;
+  margin: 1rem 0;
+  transition: background 0.2s;
+}
+.download-btn:hover {
+  background: linear-gradient(90deg, #f72585 60%, #0096c7 100%);
+}
