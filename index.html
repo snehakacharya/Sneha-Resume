@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sneha Kacharya - Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha K Acharya | Professional Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Sneha Kacharya</h1>
-    <p>Welcome to my resume page.</p>
-    <a href="resume.pdf" target="_blank">Download My Resume</a>
+    <header class="header">
+        <div class="container">
+            <div class="profile">
+                <img src="avatar.png" alt="Sneha Acharya" class="avatar" />
+                <div>
+                    <h1>Sneha K Acharya</h1>
+                    <p class="location"><span>📍</span>Bangalore, India</p>
+                    <div class="contact-links">
+                        <a href="tel:9113211958">📞 9113211958</a>
+                        <a href="mailto:snehakacharya19@gmail.com">📧 snehakacharya19@gmail.com</a>
+                        <a href="https://github.com/snehakacharya" target="_blank">💻 GitHub</a>
+                        <a href="https://www.linkedin.com/in/snehika-acharya" target="_blank">🔗 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="scroll-menu">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#internship">Internship</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="experience" class="section">
+            <h2>🎮 Experience</h2>
+            <div class="card" onclick="openPopup('popup-experience')">
+                <h3>MyGate <span class="jobdate">Sept 2023 - Present</span></h3>
+                <p>Support Engineer</p>
+                <ul>
+                    <li>Worked on ERPNext Developer</li>
+                    <li>Engineered Google Chat bots with Gemini AI API and Apps Script for smarter workflows.</li>
+                    <li>Pioneered a JavaScript-based system streamlining procurement through Google Forms.</li>
+                    <li>Automated notifications for seamless communication with approvers and team members.</li>
+                    <li>Leveraged technologies: AI, HTML, CSS, React.js, Node.js, SQL, JavaScript, Git, GCP, APIs.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="education" class="section">
+            <h2>🎓 Education</h2>
+            <div class="card" onclick="openPopup('popup-education')">
+                <h3>DIPLOMA IN COMPUTER SCIENCE</h3>
+                <p>Ramaiah Polytechnic | <span class="jobdate">05/2017 - 12/2020</span> | <b>61.4%</b></p>
+                <h3>COMPUTER SCIENCE AND ENGINEERING</h3>
+                <p>New Horizon College of Engineering | <span class="jobdate">01/2021 - 06/2023</span> | <b>CGPA 7.81</b></p>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>🛠️ Advanced Skills</h2>
+            <div class="skills-grid card" onclick="openPopup('popup-skills')">
+                <div>Python</div><div>Javascript</div><div>React Js</div>
+                <div>Html</div><div>Css</div><div>SQL</div>
+                <div>GitHub</div><div>API's</div><div>GCP</div><div>AI</div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h2>🚀 Projects</h2>
+            <div class="card" onclick="openPopup('popup-projects')">
+                <h3>IOT Based Smart Cradle For Baby Monitoring</h3>
+                <p>India, Bangalore, KA | 12/2022 - 05/2023</p>
+                <ul>
+                    <li>Part of a dynamic team of 4, ensuring 100% on-time delivery and boosting instructor satisfaction by 20%.</li>
+                    <li>Leveraged Sensors, Telegram Bot, Camera, Arduino for real-time monitoring and alerting.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="certificates" class="section">
+            <h2>🏅 Certificates</h2>
+            <div class="card" onclick="openPopup('popup-certificates')">
+                <ul>
+                    <li><b>Cisco Networking Academy:</b> Python Essentials 1 [PCEP] (05/2023 - 06/2023)</li>
+                    <li><b>Amazon Skill Builder:</b> AWS Cloud Computing Practitioner (07/2023 - 09/2023)</li>
+                    <li><b>Full Stack Web Development:</b> 06/2024</li>
+                </ul>
+            </div>
+        </section>
+        <section id="internship" class="section">
+            <h2>💼 Internship</h2>
+            <div class="card" onclick="openPopup('popup-internship')">
+                <h3>Princeton Smart Engineers | India, Bangalore, KA</h3>
+                <p>02/2023 - 07/2023</p>
+                <ul>
+                    <li>Collaborated on front-end interface design using HTML and CSS over four months.</li>
+                    <li>Enhanced the "Earthly Delight" project, contributing to a seamless shopping experience for users.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- POPUPS -->
+    <div id="popup-experience" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-experience')">&times;</span>
+        <h2>Experience Details</h2>
+        <p>At <b>MyGate</b>, I engineered innovative chatbot solutions leveraging <b>Gemini AI API</b> and Google Apps Script, optimizing internal workflows and drastically improving procurement efficiency. Automated a robust notification system connecting approvers, managers, and employees for seamless communication.</p>
+        <ul>
+          <li>Increased operational efficiency with advanced scripting and automation.</li>
+          <li>Developed scalable JavaScript workflows and unique request IDs for organization.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="popup-education" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-education')">&times;</span>
+        <h2>Education Details</h2>
+        <p>Consistently delivered outstanding academic performances, securing a distinction in Diploma and high CGPA in B.E., with a strong focus on teamwork and technical excellence.</p>
+      </div>
+    </div>
+    <div id="popup-skills" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-skills')">&times;</span>
+        <h2>Core Competencies</h2>
+        <ul>
+          <li>Front-end and back-end web development</li>
+          <li>Full-stack project integration</li>
+          <li>Cloud infrastructure with GCP and AWS</li>
+          <li>Collaboration & version control using GitHub</li>
+        </ul>
+      </div>
+    </div>
+    <div id="popup-projects" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-projects')">&times;</span>
+        <h2>Project Spotlight</h2>
+        <p><b>Smart Cradle for Baby Monitoring:</b> Utilized cutting-edge IOT, real-time monitoring, and seamless notification delivery through Telegram bots. Led organized project management, driving satisfaction and safety for end-users.</p>
+      </div>
+    </div>
+    <div id="popup-certificates" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-certificates')">&times;</span>
+        <h2>Certification Highlights</h2>
+        <p>Demonstrated adaptability and expertise through a range of upskilling credentials in cloud, programming, and web development.</p>
+      </div>
+    </div>
+    <div id="popup-internship" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('popup-internship')">&times;</span>
+        <h2>Internship Experience</h2>
+        <p>Gained hands-on exposure through four-month intensive project at Princeton Smart Engineers, enhancing UI with HTML, CSS and optimizing product display features for "Earthly Delight".</p>
+      </div>
+    </div>
+    <footer>
+        <p>Made with ❤️ by Sneha K Acharya | Last updated 2025</p>
+    </footer>
 </body>
 </html>
